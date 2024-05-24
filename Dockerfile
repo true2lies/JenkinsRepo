@@ -5,7 +5,7 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Install dependencies
-RUN npm install
+RUN sudo npm install
 
 # Copy application code
 COPY . .
