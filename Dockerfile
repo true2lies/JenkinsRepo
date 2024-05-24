@@ -4,11 +4,11 @@ FROM node:18-alpine
 # working directory in the container
 WORKDIR /app
 
-# Install dependencies
-RUN sudo npm install
-
 # Copy application code
 COPY . .
+
+# Install dependencies
+RUN npm install
 
 # port the app will run on
 EXPOSE 8000
